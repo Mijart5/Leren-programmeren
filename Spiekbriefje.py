@@ -8,14 +8,11 @@
 #omschrijving = "Lays naturel 300gr" #dit is een string
 #prijs = 0.89 #dit is een float
 
-#||||||||||||||||||||||||||||||||||||||
-# beeld in functies
-#||||||||||||||||||||||||||||||||||||||
-
 #print(f'{aantal} {omschrijving} {prijs} totaal prijs = {aantal*prijs:.2f}')
 
 #||||||||||||||||||||||||||||||||||||||
 #Gebruik formatting
+#\n is een newline
 #f' :.2f' is een float met 2 decimalen
 #||||||||||||||||||||||||||||||||||||||
 
