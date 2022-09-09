@@ -7,5 +7,5 @@ if a == b:
 else: print('De getallen zijn niet gelijk')
 
 if a > b:
-    print(f'{a} is groter dan {b}')
-else: print(f'{b} is groter dan {a}')
+        print(f'{a} is de min en {b} is de max')
+else: print(f'{a} is de min en {b} is de max')
