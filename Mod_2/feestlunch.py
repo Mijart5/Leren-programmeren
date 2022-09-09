@@ -1,13 +1,13 @@
-aantal_croissantjes = input(str('aantal croissantjes? '))
-prijs_croissantjes = input(str('prijs croissantjes?'))
-croissantjes = (int(aantal_croissantjes)) * (float(prijs_croissantjes))
+aantal_croissantjes = int(input('aantal croissantjes? '))
+prijs_croissantjes = float(input('prijs croissantjes?'))
+croissantjes = aantal_croissantjes * prijs_croissantjes
 
-aantal_stokbroden = input(str('aantal stokbroden? '))
-prijs_stokbroden = input(str('prijs stokbroden? '))
-stokbroden = (int(aantal_stokbroden)) * (float(prijs_stokbroden))
+aantal_stokbroden = int(input('aantal stokbroden? '))
+prijs_stokbroden = float(input('prijs stokbroden? '))
+stokbroden = aantal_stokbroden * prijs_stokbroden
 
-aantal_kortingsbonnen = input(str('aantal kortingsbonnen? '))
-afprijzing_kortingsbonnen = input(str('afprijzing kortingsbonnen? '))
-kortingsbonnen = (int(aantal_kortingsbonnen)) * (float(afprijzing_kortingsbonnen))
+aantal_kortingsbonnen = int(input('aantal kortingsbonnen? '))
+afprijzing_kortingsbonnen = float(input('afprijzing kortingsbonnen? '))
+kortingsbonnen = aantal_kortingsbonnen * afprijzing_kortingsbonnen
 
 print(f'De totaal prijs van de feestlunch = {croissantjes + stokbroden - kortingsbonnen}')
