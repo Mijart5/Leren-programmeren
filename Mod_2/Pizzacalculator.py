@@ -1,14 +1,15 @@
 #Mart kooijman's pizzacalculator
 
-klein = input(str('Hoeveel kleine pizzas wilt u? '))
-medium = input(str('Hoeveel Medium pizzas wilt u? '))
-groot = input(str('Hoeveel grote pizza wilt u? '))
+klein = int(input('Hoeveel kleine pizzas wilt u? '))
+medium = int(input('Hoeveel Medium pizzas wilt u? '))
+groot = int(input('Hoeveel grote pizza wilt u? '))
+print(type(klein))
 
 prijs_klein = 6
 prijs_medium = 11.49    #Prijzen volgens https://www.fastfoodprijslijst.nl/new-york-pizza-prijslijst/ pizza margherita
 prijs_groot = 13.49 
 
-totaal_prijs = (int(klein)) * prijs_klein + (int(medium)) * prijs_medium + (int(groot)) * prijs_groot
+totaal_prijs = klein * prijs_klein + medium * prijs_medium + groot * prijs_groot
 
 
 
