@@ -1,3 +1,19 @@
+from distutils.log import error
+from msilib.schema import Error
+
+
+naam = input('wat is uw naam? ')
+if naam == 'joe':
+    raise NameError('joe mama')
+
+leeftijd = int(input('hoe oud bent u? '))
+if leeftijd == 69420:
+    raise NameError('wow grapjas')
+
+veter = input('kunt u uw veters strikken? ')
+if veter == 'nee':
+    raise NameError('L bozo')
+
 dressuur = int(input('Hoeveel jaar ervaring heeft u met dieren-dressuur? '))
 jongleren = int(input('hoeveel jaar ervaring heeft u met jongleren? '))
 acrobatiek = int(input('hoeveel jaar ervaring heeft u met acrobatiek? '))
@@ -9,7 +25,6 @@ vrouw = input('bent u een vrouw met rood krulhaar langer dan 20cm? ')
 lengte = int(input('Wat is uw lengte in centimeters? '))
 gewicht = int(input('Wat is uw gewicht in kilogram? '))
 certificaat = input('Heeft u certificaat “Overleven met gevaarlijk personeel”? ')
-
 
 phase1 = False
 
