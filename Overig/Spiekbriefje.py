@@ -20,10 +20,22 @@
 #Hoe kan dit korter worden?
 #||||||||||||||||||||||||||||||||||||||
 
-aantal = 3
-omschrijving = "Lays naturel 300gr"
-prijs = 0.89
+#||||||||||||||||||||||||||||||||||||||
+#Rounds
+#||||||||||||||||||||||||||||||||||||||
+#aantal = 3
+#omschrijving = "Lays naturel 300gr"
+#prijs = 0.89
 
-Lays = f'{aantal} {omschrijving} {prijs} {aantal*prijs:.2f}'
+#Lays = f'{aantal} {omschrijving} {prijs} {aantal*prijs:.2f}'
 
-print(Lays)
+#print(Lays)
+
+#getal1 = 7.013210
+#getal2 = 2
+#getal3 = getal1 * getal2
+
+#ant = round(getal3,2)
+
+#print(ant)
+#||||||||||||||||||||||||||||||||||||||
