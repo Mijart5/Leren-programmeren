@@ -47,7 +47,14 @@ if choice1 == 'cave':
                         print('You made the right choice. The lives of those 5 men was enough bloodshed for today.')
                         print('Life goes on as normal.')
                         raise NameError('You win')
-
+                else:
+                    print('What are you? stupid?')
+                    raise NameError('you died')
+            else:
+                print('You walk outside of the cave.')
+                print('The man that gave you the sword stands there')
+                print(f'Oh? {name} You are not worthy after all?')
+                raise NameError('Your head violently pops. You died')
         else:
             print('You dont take the sword and decide to wander further into the cave resulting in you getting jumped by 5 bandits')
         raise NameError('You died.')
