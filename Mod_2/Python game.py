@@ -80,7 +80,7 @@ else:
 
         print('You chose to go to the alley')
         print('You end up getting beat up by the men.')
-        
+
     else:
         print('A few drunk men spot you.')
         print('They start getting mad')
