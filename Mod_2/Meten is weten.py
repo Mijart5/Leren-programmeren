@@ -1,11 +1,11 @@
-a = int(input('geef een geheel getal: '))
+min = int(input('geef een geheel getal: '))
 
-b = int(input('geef een geheel getal: '))
+max = int(input('geef een geheel getal: '))
 
-if a == b:
+if min == max:
     print('De getallen zijn gelijk')
 else: print('De getallen zijn niet gelijk')
 
-if a > b:
-        print(f'{a} is de min en {b} is de max')
-else: print(f'{a} is de min en {b} is de max')
+if min > max:
+        print(f'{min} is de min en {max} is de max')
+else: print(f'{min} is de min en {max} is de max')
