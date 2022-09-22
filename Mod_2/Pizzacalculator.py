@@ -4,59 +4,50 @@ from contextlib import nullcontext
 from logging import NullHandler
 
 
-klein = NULL
-while not klein:
+klein = None
+while  klein == None:
     try:
         klein = int(input('Hoeveel kleine pizzas wilt u? '))
-        break
     except:
         print('Dat is geen nummer, probeer opnieuw.')
-        continue
 
-medium = NULL
-while not medium:
+    print(klein)
+
+medium = None
+while  medium == None:
     try:
         medium = int(input('Hoeveel Medium pizzas wilt u? '))
-        break
     except:
         print('Dat is geen nummer, probeer opnieuw.')
-        continue
 
-groot = NULL
-while not groot:
+groot = None
+while groot == None:
     try:
         groot = int(input('Hoeveel grote pizza wilt u? '))
-        break
     except:
         print('Dat is geen nummer, probeer opnieuw.')
-        continue
 
-prijs_klein = NULL
-while not prijs_klein:
+prijs_klein = None
+while prijs_klein == None:
     try:
         prijs_klein = float(input('Wat is de prijs van de kleine pizzas? '))
-        break
     except:
         print('Dat is geen nummer, probeer opnieuw.')
-        continue
 
-prijs_medium = NULL
-while not prijs_medium:
+
+prijs_medium = None
+while prijs_medium == None:
     try:
         prijs_medium = float(input('Wat is de prijs van de medium pizzas? '))
-        break
     except:
         print('Dat is geen nummer, probeer opnieuw.')
-        continue
 
-prijs_groot = NULL
-while not prijs_groot:
+prijs_groot = None
+while prijs_groot == None:
     try:
         prijs_groot = float(input('wat is de prijs van de grote pizzas? '))
-        break
     except:
         print('Dat is geen nummer, probeer opnieuw.')
-        continue
 
 totaal_prijs = klein * prijs_klein + medium * prijs_medium + groot * prijs_groot
 
