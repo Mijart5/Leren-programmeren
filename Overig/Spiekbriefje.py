@@ -1,41 +1,55 @@
-# zo maak je commentaar
+#spiekbriefje Mart
 
-#||||||||||||||||||||||||||||||||||||
-# dit zijn variablen
-#||||||||||||||||||||||||||||||||||||
+#Variablen = stukje data van het type
+#STR = Stukje text
+#INT = Heel getal zonder decimalen
+#FLOAT = Getal met decimalen
 
-#aantal = 3   # dit is een integer
-#omschrijving = "Lays naturel 300gr" #dit is een string
-#prijs = 0.89 #dit is een float
+Dom = 'mart' #Voorbeeld van String
+int = 9 #Voorbeeld van een Integer
+float = 10.69 #Voorbeeld van een Float
 
-#print(f'{aantal} {omschrijving} {prijs} totaal prijs = {aantal*prijs:.2f}')
+#BIF = Built In Function
+#Built in functions zijn functions die altijd in elke code gebruikt kunnen worden en zitten ingebouwd in de programeer taal
 
-#||||||||||||||||||||||||||||||||||||||
-#Gebruik formatting
-#\n is een newline
-#f' :.2f' is een float met 2 decimalen
-#||||||||||||||||||||||||||||||||||||||
+print('Hallo wereld!') #Een voorbeeld van BIF print
 
-#||||||||||||||||||||||||||||||||||||||
-#Hoe kan dit korter worden?
-#||||||||||||||||||||||||||||||||||||||
+Naam = input('Wat is uw naam? ') #voorbeeld van BIF input
 
-#||||||||||||||||||||||||||||||||||||||
-#Rounds
-#||||||||||||||||||||||||||||||||||||||
-#aantal = 3
-#omschrijving = "Lays naturel 300gr"
-#prijs = 0.89
+#Formatting word gebruikt vooral als je variablen wilt gebruiken in een print
 
-#Lays = f'{aantal} {omschrijving} {prijs} {aantal*prijs:.2f}'
+print(f'Hallo {Naam} !') #Voorbeeld van formatting
+print(f'{float:.0f}') #voorbeeld van afronding op 0 decimalen via formatting
 
-#print(Lays)
+#if else en elif
+#if = als iets dan
+#elif = anders
+#else = anders maar sluitend 
 
-#getal1 = 7.013210
-#getal2 = 2
-#getal3 = getal1 * getal2
+if Naam == 'Mart': #een if statement
+    print('Mart is echt cool')
+else: #een else statement
+    print(f'{Naam} waarom ben jij hier?')
 
-#ant = round(getal3,2)
+#loops worden gebruikt om 1 of meerdere acties te herhalen
+#for loop = een loop waar je zeker weet dat hij zo vaak iets moet doen
+#while loop = een loop waar je niet zeker weet hoe vaak hij herhaald moet worden
 
-#print(ant)
-#||||||||||||||||||||||||||||||||||||||
+for i in range(2): #voorbeeld van een for loop
+    print('HALLO!')
+
+while int >= 9: #voorbeeld van een while loop
+    int += 1
+    print('Hallo')
+    if int == 13:
+        break
+
+#Break continue
+# break stopt een stukje code maar niet het hele programma
+#continue zorgt er voor dat een stukje code weer door gaat
+
+#Raise error = stopt een hele code als het word getriggerd
+
+stop = input('wilt u stoppen? ')
+if stop == 'ja':
+    raise NameError('Ratio')
