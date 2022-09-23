@@ -13,7 +13,6 @@ if geel == 'nee':
             print('uw kaas is camembert')
         else:
             print('uw kaas is mozzarella')
-
 else:
     gaten = input('heeft de kaas gaten? ')
     if gaten == 'ja':
