@@ -53,3 +53,12 @@ while int >= 9: #voorbeeld van een while loop
 stop = input('wilt u stoppen? ')
 if stop == 'ja':
     raise NameError('Ratio')
+
+#Try except = probeer iets en als het niet lukt doe iets anders
+
+try:
+    int = int(input('Voer een getal in: '))
+except ValueError:
+    print('Dat is geen getal')
+
+#abs maakt een getal positief
