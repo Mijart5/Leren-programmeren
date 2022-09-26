@@ -1,17 +1,23 @@
 import random
 spellen = 0
 rondes = 0
-num = random.randint(0,1000)
-print(num)
 while spellen >= 0:
+    num = random.randint(0,1000)
+    print(num)
     while rondes >= 0:
-        gok = int(input('Raad een nummer! '))
+        gok = -1
+        while gok == -1:
+            try:
+                gok = int(input("Voer een getal in: "))
+            except ValueError:
+                print("Dat is geen getal!")
+        total = abs(num - gok)
         if gok == num:
             print('Wow! je hebt het nummer geraden')
-            break
-        if num - gok <= 20:
+            raise NameError('Je hebt het nummer geraden')
+        if total <= 20:
             print('je bent heel warm')
-        elif num - gok <= 50:
+        elif total <= 50:
             print('je bent warm')
         else:
             print('Koud raad nog eens!')
@@ -22,5 +28,8 @@ while spellen >= 0:
             break
     spellen += 1
     print(f'{spellen} spellen gespeeld')
-    if spellen == 20:
+    wiljestoppen = input('Wil je stoppen? (ja/nee): ')
+    if wiljestoppen == 'ja':
+        break
+    if spellen == 20: 
         break
