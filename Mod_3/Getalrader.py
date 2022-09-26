@@ -14,7 +14,7 @@ while spellen >= 0:
         total = abs(num - gok)
         if gok == num:
             print('Wow! je hebt het nummer geraden')
-            raise NameError('Je hebt het nummer geraden')
+            break
         if total <= 20:
             print('je bent heel warm')
         elif total <= 50:
