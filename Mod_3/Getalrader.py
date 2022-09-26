@@ -35,7 +35,7 @@ while spellen >= 0:
         print(f'Je score tot nu toe is {score} getalen geraden over {spellen} spellen')
         continue
     elif door == 'nee':
-        print(f'je score is {score} getalen geraden over {spellen} spel(len)')
+        print(f'je score is {score} getalen geraden over {spellen} spellen')
         raise NameError('Je bent gestopt')
     if spellen == 20: 
         print(f'je score is {score} getalen geraden over {spellen} spellen')
