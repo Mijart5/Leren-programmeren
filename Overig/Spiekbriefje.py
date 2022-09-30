@@ -62,3 +62,7 @@ except ValueError:
     print('Dat is geen getal')
 
 #abs maakt een getal positief
+#/ * = + - > < >= <= zijn voorbeelden van operators
+#// = deelt 2 getallen en geeft een heel getal terug
+#% = geeft de rest terug van een deling
+#** = vermenigvuldigd 2 getallen
