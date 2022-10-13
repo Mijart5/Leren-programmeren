@@ -1,6 +1,6 @@
-lengte = int(input("Wat is de lengte van uw zwembad?: "))
-breedte = int(input("Wat is de breedte van uw zwembad?: "))
-diepte = int(input("Wat is de diepte van uw zwembad?: "))
+lengte = float(input("Wat is de lengte van uw zwembad?: "))
+breedte = float(input("Wat is de breedte van uw zwembad?: "))
+diepte = float(input("Wat is de diepte van uw zwembad?: "))
 Grootte_zwembad = lengte * breedte * diepte
 
 print(f'{Grootte_zwembad:.2f} M3')
@@ -13,7 +13,7 @@ afvoer_kosten = Grootte_zwembad * afvoer_kosten
 
 totaal_graven = uitgraaf_kosten + afvoer_kosten
 
-afstand = int(input("Wat is de afstand in KM?: "))
+afstand = float(input("Wat is de afstand in KM?: "))
 if Grootte_zwembad < 20:
     voorrijkosten = 100
     if afstand < 50:
