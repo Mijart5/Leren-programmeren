@@ -30,7 +30,7 @@ else:
 opp_zwembad = lengte * breedte
 if Grootte_zwembad < 20:
     bet_teg = opp_zwembad * 250
-    meerprijs_rood = input("Wilt u roode tegels?: ")
+    meerprijs_rood = input("Wilt u rode tegels?: ")
     if meerprijs_rood == "ja":
         bet_teg = bet_teg + opp_zwembad * 25
     meerprijs_kleurkeuze = input("Wilt u een kleur naar keuze voor uw tegels?: ")
@@ -38,7 +38,7 @@ if Grootte_zwembad < 20:
         bet_teg = bet_teg + 100
 else:
      bet_teg = opp_zwembad * 200
-     meerprijs_rood = input("Wilt u roode tegels?: ")
+     meerprijs_rood = input("Wilt u rode tegels?: ")
      if meerprijs_rood == "ja":
         bet_teg = bet_teg + opp_zwembad * 20
      meerprijs_kleurkeuze = input("Wilt u een kleur naar keuze voor uw tegels?: ")
