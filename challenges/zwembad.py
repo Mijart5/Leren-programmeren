@@ -8,20 +8,19 @@ def get_input(text: str) -> float:
 lengte = get_input("Wat is de lengte van uw zwembad?: ")
 breedte = get_input("Wat is de breedte van uw zwembad?: ")
 diepte = get_input("Wat is de diepte van uw zwembad?: ")
-
+afstand = get_input("Wat is de afstand in KM?: ")
+UITGRAAF_KOSTEN = 25
+AFVOER_KOSTEN = 32.50
 grootte_zwembad = lengte * breedte * diepte
 
 print(f'Het zwembad is: {grootte_zwembad:.2f} M3')
 print("----------------------------------------")
-uitgraaf_kosten = 25
-uitgraaf_kosten = grootte_zwembad * uitgraaf_kosten
+UITGRAAF_KOSTEN = grootte_zwembad * UITGRAAF_KOSTEN
 
-afvoer_kosten = 32.50
-afvoer_kosten = grootte_zwembad * afvoer_kosten
+AFVOER_KOSTEN = grootte_zwembad * AFVOER_KOSTEN
 
-totaal_graven = uitgraaf_kosten + afvoer_kosten
+totaal_graven = UITGRAAF_KOSTEN + AFVOER_KOSTEN
 
-afstand = float(input("Wat is de afstand in KM?: "))
 if grootte_zwembad < 20:
     voorrijkosten = 100
     if afstand < 50:
@@ -38,6 +37,7 @@ else:
 opp_zwembad_LB = lengte * breedte
 opp_zwembad_LH = lengte * diepte
 opp_zwembad_HB = diepte * breedte
+
 if grootte_zwembad < 20:
     bet_teg = opp_zwembad_LB + opp_zwembad_HB + opp_zwembad_LH * 250
     meerprijs_rood = input("Wilt u rode tegels?: ")
@@ -57,8 +57,8 @@ else:
 
 totaal = totaal_graven + voorrijkosten + bet_teg
 print(f'''----------------------------------------------------
-- Uitgraven: $ {uitgraaf_kosten:.2f}
-- Afvoeren: $ {afvoer_kosten:.2f}
+- Uitgraven: $ {UITGRAAF_KOSTEN:.2f}
+- Afvoeren: $ {AFVOER_KOSTEN:.2f}
 - Voorrijkosten: $ {voorrijkosten:.2f}
 - Beton + tegel {opp_zwembad_LB:.2f}M2: $ {bet_teg:.2f}
 - Totaal: $ {totaal:.2f}
