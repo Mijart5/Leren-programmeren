@@ -1,20 +1,28 @@
-lengte = float(input("Wat is de lengte van uw zwembad?: "))
-breedte = float(input("Wat is de breedte van uw zwembad?: "))
-diepte = float(input("Wat is de diepte van uw zwembad?: "))
-Grootte_zwembad = lengte * breedte * diepte
+def get_input(text: str) -> float:
+    while True:
+      try:
+        return float(input(text))
+      except ValueError:
+        print("Geef een nummer")
 
-print(f'Het zwembad is: {Grootte_zwembad:.2f} M3')
+lengte = get_input("Wat is de lengte van uw zwembad?: ")
+breedte = get_input("Wat is de breedte van uw zwembad?: ")
+diepte = get_input("Wat is de diepte van uw zwembad?: ")
+
+grootte_zwembad = lengte * breedte * diepte
+
+print(f'Het zwembad is: {grootte_zwembad:.2f} M3')
 print("----------------------------------------")
 uitgraaf_kosten = 25
-uitgraaf_kosten = Grootte_zwembad * uitgraaf_kosten
+uitgraaf_kosten = grootte_zwembad * uitgraaf_kosten
 
 afvoer_kosten = 32.50
-afvoer_kosten = Grootte_zwembad * afvoer_kosten
+afvoer_kosten = grootte_zwembad * afvoer_kosten
 
 totaal_graven = uitgraaf_kosten + afvoer_kosten
 
 afstand = float(input("Wat is de afstand in KM?: "))
-if Grootte_zwembad < 20:
+if grootte_zwembad < 20:
     voorrijkosten = 100
     if afstand < 50:
         voorrijkosten = voorrijkosten + afstand * 1.25
@@ -30,7 +38,7 @@ else:
 opp_zwembad_LB = lengte * breedte
 opp_zwembad_LH = lengte * diepte
 opp_zwembad_HB = diepte * breedte
-if Grootte_zwembad < 20:
+if grootte_zwembad < 20:
     bet_teg = opp_zwembad_LB + opp_zwembad_HB + opp_zwembad_LH * 250
     meerprijs_rood = input("Wilt u rode tegels?: ")
     if meerprijs_rood == "ja":
