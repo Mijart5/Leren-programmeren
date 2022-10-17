@@ -1,24 +1,27 @@
 import random
 
-geheel = int(input("Hoeveel m&ms moeten in de zak? (EVEN GETAL): "))
-
-A_rood = random.randint(0,geheel)
-na_rood = geheel - A_rood
-
-A_blauw = random.randint(0,na_rood)
-na_blauw = na_rood - A_blauw
-
-A_groen = random.randint(0,na_blauw)
-na_groen = na_blauw - A_groen
-
-A_geel = random.randint(0,na_groen)
-na_geel = na_groen - A_geel
-
-A_bruin = na_geel
-
-bag = (f"rood {A_rood}", f"groen {A_groen}", f"blauw {A_blauw}", f"bruin {A_bruin}")
+kleuren = ("Rood", "Groen", "Blauw", "Bruin")
+aantal = int(input("Hoeveel M&Ms moeten toegevoegd worden aan de zak?: "))
 zak = []
 
-for i in range(4):
-    zak.append({bag[i]})
+deel = random.randint(0,aantal)
+ndeel = aantal - deel
+
+deel2 = random.randint(0,ndeel)
+ndeel2 = ndeel - deel2
+
+deel3 = random.randint(0,ndeel2)
+ndeel3 = ndeel2 - deel3
+
+deel4 = random.randint(0,ndeel3)
+ndeel4 = ndeel3 - deel4
+
+A_bruin = ndeel4
+
+print(f"{deel} {deel2} {deel3} {deel4} {deel + deel2 + deel3 + deel4}")
+
+zak.append({kleuren[0] : deel})
+zak.append({kleuren[1] : deel2})
+zak.append({kleuren[2] : deel3})
+zak.append({kleuren[3] : deel4})
 print(zak)
