@@ -1,6 +1,6 @@
 import random
 
-MAX_RANDOM = 4
+MAX_RANDOM = 2
 
 kleuren = ["Rood", "Blauw", "Groen", "Geel", "Bruin"]
 results = {}
