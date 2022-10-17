@@ -4,16 +4,16 @@ kleuren = ("Rood", "Groen", "Blauw", "Bruin")
 aantal = int(input("Hoeveel M&Ms moeten toegevoegd worden aan de zak?: "))
 zak = []
 
-deel = random.randint(0,aantal)
+deel = random.randint(1,aantal)
 ndeel = aantal - deel
 
-deel2 = random.randint(0,ndeel)
+deel2 = random.randint(1,ndeel)
 ndeel2 = ndeel - deel2
 
-deel3 = random.randint(0,ndeel2)
+deel3 = random.randint(1,ndeel2)
 ndeel3 = ndeel2 - deel3
 
-deel4 = random.randint(0,ndeel3)
+deel4 = random.randint(1,ndeel3)
 ndeel4 = ndeel3 - deel4
 
 A_bruin = ndeel4
