@@ -1,14 +1,14 @@
 import random
 deck = []
-spec = ("Koning", "Vrouw", "Boer", "Aas")
-types = ("Harten", "Ruiten", "Schoppen", "Klaver")
+SPEC = ("Koning", "Vrouw", "Boer", "Aas")
+TYPES = ("Harten", "Ruiten", "Schoppen", "Klaver")
 for i in range(4):
-    deck.append({types[0] : spec[i]})
-    deck.append({types[1] : spec[i]})
-    deck.append({types[2] : spec[i]})
-    deck.append({types[3] : spec[i]})
+    deck.append(TYPES[0] + " " + SPEC[i])
+    deck.append(TYPES[1] + " " + SPEC[i])
+    deck.append(TYPES[2] + " " + SPEC[i])
+    deck.append(TYPES[3] + " " + SPEC[i])
     for y in range(2,11):
-        deck.append({types[i]: {y}})
+        deck.append(TYPES[i] + " " + str(y))
 for i in range(7):
     kaart = random.choice(deck)
     print(f"kaart {i + 1} = {kaart}")
