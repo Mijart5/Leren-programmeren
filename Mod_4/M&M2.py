@@ -15,6 +15,3 @@ bagofmms = {
     'bruin' : zak.count('bruin'),
 }
 print(bagofmms)
-
-
-#zoek op random.choice
