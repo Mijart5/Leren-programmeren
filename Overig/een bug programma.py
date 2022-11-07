@@ -38,4 +38,3 @@ while spellen <= 0:
         raise nameError('Je bent gestopt)
     if spellen == 20: 
         print('je score is {score} getalen geraden over {spellen} spellen')
-        
