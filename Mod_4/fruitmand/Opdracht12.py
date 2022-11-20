@@ -1,13 +1,13 @@
 from fruitmand import fruitmand
 fruit_naam = ""
 
-fruitmand[0].update({"name": "ananas", "weight": 1590, "color": "geel", "round": False})
-fruitmand[1].update({"name": "appel", "weight": 195, "color": "groen", "round": True})
-fruitmand[2].update({"name" : "sinaasappel", "weight" : 130, "color" : "oranje", "round" : True})
-fruitmand[3].update({"name" : "banaan", "weight" : 120, "color" : "geel", "round" : False})
-fruitmand[4].update({"name" : "druif", "weight" : 5, "color" : "rood", "round" : True})
-fruitmand[5].update({"name" : "kiwi", "weight" : 75, "color" : "bruin", "round" : False})
-fruitmand[6].update({"name" : "citroen", "weight" : 100, "color" : "geel", "round" : True})
+fruitmand[0].update({"name": "ananas","color": "geel"})
+fruitmand[1].update({"name": "appel","color": "groen"})
+fruitmand[2].update({"name" : "sinaasappel","color" : "oranje"})
+fruitmand[3].update({"name" : "banaan","color" : "geel"})
+fruitmand[4].update({"name" : "druif","color" : "rood"})
+fruitmand[5].update({"name" : "kiwi","color" : "bruin"})
+fruitmand[6].update({"name" : "citroen","color" : "geel"})
 
 for i in fruitmand:
     if len(i.get("name")) > len(fruit_naam):

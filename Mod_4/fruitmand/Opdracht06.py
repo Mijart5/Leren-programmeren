@@ -1,3 +1,6 @@
 from fruitmand import fruitmand
 
-print(fruitmand[1].get('weight'))
+for i in fruitmand:
+    if i.get("name") == "appel":
+        print(fruitmand[fruitmand.index(i)].get("weight"))
+        break

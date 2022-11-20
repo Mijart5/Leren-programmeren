@@ -4,15 +4,17 @@ niet_rond = 0
 kleur = None
 while kleur == None:
     kleur = input("Kies een kleur: ")
-    if kleur not in ["yellow", "green", "orange", "red", "brown"]:
-        kleur = None
-        print("Kies een kleur uit de lijst")
-    for i in range(7):
-        if fruitmand[i].get("color") in kleur:
-            if fruitmand[i].get("round") == True:
-                rond += 1
-            else:
-                niet_rond += 1
+    for x in range(7):
+        if kleur in fruitmand[x].get("kleur"):
+            kleur = kleur
+        else:
+            print("kleur zit niet in de fruitmand")
+for i in range(7):
+    if fruitmand[i].get("color") in kleur:
+        if fruitmand[i].get("round") == True:
+            rond += 1
+        else:
+            niet_rond += 1
 if rond == niet_rond:
     print(f"Er zijn {rond} en {niet_rond} niet ronde vruchten in {kleur}")
 elif rond > niet_rond:
