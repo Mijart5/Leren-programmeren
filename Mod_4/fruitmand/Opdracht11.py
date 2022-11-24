@@ -5,12 +5,12 @@ niet_rond = 0
 cont = False
 while cont == False:
     kleur = input("Kies een kleur: ")
-    for x in range(7):
-        if kleur in fruitmand[x].get("color"):
+    for x in fruitmand:
+        if kleur == x["color"]:
             cont = True
-            break    
-    print("kies een andere kleur")
-
+            break
+    if cont == False:
+        print(f"{kleur} zit niet in de fruitmand")
 for i in range(7):
     if fruitmand[i].get("color") in kleur:
         if fruitmand[i].get("round") == True:

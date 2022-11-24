@@ -1,13 +1,8 @@
 from fruitmand import fruitmand
 fruit_naam = ""
-
-fruitmand[0].update({"name": "ananas","color": "geel"})
-fruitmand[1].update({"name": "appel","color": "groen"})
-fruitmand[2].update({"name" : "sinaasappel","color" : "oranje"})
-fruitmand[3].update({"name" : "banaan","color" : "geel"})
-fruitmand[4].update({"name" : "druif","color" : "rood"})
-fruitmand[5].update({"name" : "kiwi","color" : "bruin"})
-fruitmand[6].update({"name" : "citroen","color" : "geel"})
+renamers = {"yellow": "geel", "green": "groen", "orange": "oranje", "red": "rood", "brown": "bruin"}
+for fruit in fruitmand:
+    fruit["color"] = renamers[fruit["color"]]
 
 for i in fruitmand:
     if len(i.get("name")) > len(fruit_naam):
