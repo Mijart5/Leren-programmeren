@@ -11,9 +11,9 @@ while cont == False:
             break
     if cont == False:
         print(f"{kleur} zit niet in de fruitmand")
-for i in range(7):
-    if fruitmand[i].get("color") in kleur:
-        if fruitmand[i].get("round") == True:
+for i in fruitmand:
+    if i["color"] in kleur:
+        if i["round"] == True:
             rond += 1
         else:
             niet_rond += 1
@@ -22,4 +22,4 @@ if rond == niet_rond:
 elif rond > niet_rond:
     print(f"Er zijn {rond - niet_rond} meer ronde vruchten dan niet ronde vruchten in de kleur {kleur}")
 else:
-    print(f"Er zijn meer {niet_rond - rond} niet ronde vruchten dan ronde vruchten in de kleur {kleur}")
+    print(f"Er zijn {niet_rond - rond} meer niet ronde vruchten dan ronde vruchten in de kleur {kleur}")
