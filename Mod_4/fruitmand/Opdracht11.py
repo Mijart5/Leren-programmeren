@@ -9,11 +9,11 @@ while cont == False:
         if kleur == x["color"]:
             cont = True
             break
-    if cont == False:
+    if not cont:
         print(f"{kleur} zit niet in de fruitmand")
 for i in fruitmand:
     if i["color"] in kleur:
-        if i["round"] == True:
+        if i["round"]:
             rond += 1
         else:
             niet_rond += 1
