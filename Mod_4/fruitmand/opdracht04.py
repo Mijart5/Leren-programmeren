@@ -1,6 +1,8 @@
 from fruitmand import fruitmand
 import random
 
+lijst = []
 aantal = int(input("Aantal?: "))
 for i in range(aantal):
-    print(random.choice(fruitmand).get("name"))
+    lijst.append(random.choice(fruitmand)["name"])
+print(lijst)

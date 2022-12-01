@@ -8,7 +8,6 @@ while cont == False:
     for x in fruitmand:
         if kleur == x["color"]:
             cont = True
-            break
     if not cont:
         print(f"{kleur} zit niet in de fruitmand")
 for i in fruitmand:
