@@ -21,4 +21,5 @@ while not ok:
             break
         else:
             ok = True
-print(eerste_list, tweede_list)
+for x in range(len(eerste_list)):
+    print(f"{eerste_list[x]} heeft {tweede_list[x]}")
